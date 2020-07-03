@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Sushi Invaders</title>
+    <link rel='icon' href='favicon.ico' type='image/x-icon'/ >
+    <!-- small icon of the website -->
+    <script type="text/javascript" src="p5.min.js"></script>
+   
+    <script type="text/javascript" src="sketch.js"></script>
+    <script type="text/javascript" src="Sushi.js"></script>
+    <script type="text/javascript" src="soydrop.js"></script>
+    <script type="text/javascript" src="soysauce.js"></script>
+  </head>
+  <body>
+  	<img src="sushi.png" height='50' width='50'> <!-- the small icon next to the heading -->
+    <h1>Sushi Invader</h1> <!-- heading on the page -->
+    <div>Move left and right by key arrow, and Shoot by space bar</div> <!-- instruction of how to play the game -->
+    
+    <div class="square"></div> 
+    <!-- the class - the square under the game canvas -->
+    <style> /*style starts*/
+        .square{ /*style for class square*/
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-left: -400px; /* This is half the width */
+          margin-top: -275px; /* This is half the height */
+          height: 555px;
+          width:800px;
+          background-color: #a6f3ff; /*blue colour for background*/
+        } /*style for class square ends*/
+
+   		img{	
+        /*image style*/
+          /*this is for the image to move close to the text on the page*/
+      		position: absolute;
+      		margin-top: -5px;
+      		margin-left:-190px;
+   		}
+      	body{
+          /*body style*/
+      		text-align: center; /*front will be allign in the center of the page*/
+      		font-family: 'Space Mono', monospace; /*font of the information on the page*/
+      		
+      	}
+      	div{ /*div style*/
+  			font-size: 20px;
+      	}
+
+      	
+
+      	canvas { 
+          /*style of canvas*/
+        	/*this is for canvas to position in the middle of the page*/
+          position: absolute;
+        	width: 700px;
+        	height: 500px;
+        	left: 50%;
+        	top: 50%;
+        	margin-left: -350px; /* This is half the width */
+       		margin-top: -250px; /* This is half the height */
+		    } /*style of canvas ends*/   
+    </style>  
+    <!-- style ends -->
+
+  </body>
+  <!-- body ends -->
+
+</html>
+<!-- html file ends -->
+
+
+
